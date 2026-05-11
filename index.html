@@ -163,7 +163,14 @@
     .site-header .container--wide {
       display: flex;
       align-items: center;
-      justify-content: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    .site-header .nav-cta {
+      padding: 10px 22px;
+      font-size: 0.85rem;
+      flex-shrink: 0;
     }
  
     .logo-text {
@@ -227,6 +234,15 @@
     .hero .cta-pair {
       justify-content: center;
     }
+
+    .hero .hero-accent {
+      color: var(--sprout);
+      font-weight: 700;
+    }
+
+    .hero .subhead em {
+      font-style: italic;
+    }
  
     .hero .cta-note {
       color: var(--sky);
@@ -247,6 +263,33 @@
       padding-left: 24px;
       margin: 32px 0;
       line-height: 1.4;
+    }
+
+    .problem .callout {
+      background: var(--sky);
+      border-left: 4px solid var(--ocean);
+      border-radius: 0 8px 8px 0;
+      padding: 24px 28px;
+      margin: 32px 0 0;
+      line-height: 1.65;
+    }
+
+    .problem .callout strong {
+      display: block;
+      color: var(--ocean);
+      font-family: var(--font-heading);
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+
+    .problem .callout .accent {
+      color: var(--ocean);
+      text-decoration: underline;
+      text-decoration-color: rgba(2, 82, 93, 0.45);
+      text-decoration-thickness: 2px;
+      text-underline-offset: 3px;
+      font-weight: 600;
     }
  
     /* ===== SOLUTION ===== */
@@ -606,6 +649,7 @@
         <span class="logo-name">Bateson</span>
         <span class="logo-sub">Digital Strategy</span>
       </div>
+      <a href="#pricing" class="btn btn--primary nav-cta">Claim your spot</a>
     </div>
   </header>
  
@@ -613,15 +657,15 @@
   <!-- ===== HERO ===== -->
   <section class="hero">
     <div class="container">
-      <span class="overline">Private Beta — 3 Spots Only</span>
+      <span class="overline">6 SPOTS ONLY</span>
       <h1>Your funnel, built and running.<br>New leads, every day.</h1>
-      <p class="subhead">We build a simple, automated funnel for your practice — lead magnet to email list to booking — and set up a $5/day ad campaign so new people find you while you're busy seeing clients.</p>
+      <p class="subhead">A <span class="hero-accent">done-for-you funnel</span> — lead magnet, opt-in page, welcome emails, and a Facebook & Instagram ad campaign. Built and running in less than 3 weeks. <em>Finally, a system working for you 24/7, built by our team.</em></p>
  
       <div class="cta-pair">
         <a href="[PURCHASE LINK]" class="btn btn--primary">Claim Your Spot — $997</a>
         <a href="[BOOKING LINK]" class="btn btn--ghost">Book a Call First</a>
       </div>
-      <p class="cta-note">Not sure yet? Book a quick call and we'll talk it through.</p>
+      <p class="cta-note">Six spots available. Intro price: $997</p>
     </div>
   </section>
  
@@ -644,6 +688,11 @@
       <blockquote class="pull-quote">"I keep getting stuck on one piece and never finish it."</blockquote>
  
       <p>You're not failing at marketing. You're a practitioner. You're great at what you do. You just don't have the time or bandwidth to become a tech expert on top of it — and you shouldn't have to.</p>
+
+      <div class="callout">
+        <strong>The gap isn't knowledge. It's bandwidth.</strong>
+        Meanwhile, your funnel sits half-built — and the people who would have booked you this month never even find you. You don't need more information about email marketing. You need someone to <span class="accent">build it for you</span> so it's actually done, actually running, and connecting you with new people every day.
+      </div>
     </div>
   </section>
  
