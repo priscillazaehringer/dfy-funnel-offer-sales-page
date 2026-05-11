@@ -144,8 +144,18 @@ nav{position:sticky;top:0;z-index:100;background:var(--cream);border-bottom:1px 
 .beta-dot{width:7px;height:7px;border-radius:50%;background:var(--navy);animation:pulse 2s infinite}
 @keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.4;transform:scale(.82)}}
 .price-big{font-family:var(--head);font-size:3.2rem;font-weight:600;color:var(--navy);line-height:1;display:block;margin-bottom:6px}
+.p-was{display:block;font-size:14px;color:var(--muted);margin-bottom:4px}
+.p-caption{font-size:15px;color:var(--muted);margin-bottom:0}
+.p-divider{border:0;border-top:1px solid var(--border);margin:22px 0}
+.p-eyebrow{display:block;font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--navy);margin-bottom:14px}
+.p-ad{font-size:14px;color:var(--muted);text-align:center;margin:0;line-height:1.55}
+.p-split{text-align:center;font-size:14px;color:var(--muted);margin:10px 0 0}
+.p-call{text-align:center;margin-top:18px}
+.p-call-q{font-size:14px;color:var(--muted);margin:0 0 6px}
+.p-call-link{display:inline-block;font-size:14px;color:var(--muted);text-decoration:underline;text-underline-offset:3px}
+.p-call-link:hover{color:var(--navy)}
 .price-note{font-size:15px;color:var(--muted);font-style:italic;margin-bottom:26px}
-.inc-list{list-style:none;margin-bottom:24px;border-top:1px solid var(--border);padding-top:22px}
+.inc-list{list-style:none;margin:0}
 .inc-list li{display:flex;align-items:flex-start;gap:13px;margin-bottom:11px;font-size:16px;color:var(--text);line-height:1.5}
 .inc-list li::before{content:'✓';color:var(--navy);font-weight:700;flex-shrink:0;margin-top:2px}
 .beta-terms{background:var(--cream);border-radius:12px;padding:16px 22px;margin-bottom:26px;font-size:15px;color:var(--muted);line-height:1.62}
@@ -523,9 +533,13 @@ footer a{color:var(--muted)}
         6 Spots · New Service Offer
       </div>
 
-      <span class="price-big"><span style="font-size:1.6rem;color:var(--muted);font-weight:400;text-decoration:line-through;margin-right:10px;">$1,997</span>$1,297</span>
-      <p class="price-note">Intro pricing – one-time. No ongoing fees from us. Ad spend (~$150/mo at $5/day) goes directly to Meta.</p>
+      <span class="p-was">was $1,997</span>
+      <span class="price-big">$1,297</span>
+      <p class="p-caption">One-time payment. No ongoing fees from us.</p>
 
+      <hr class="p-divider"/>
+
+      <span class="p-eyebrow">What you get</span>
       <ul class="inc-list">
         <li>Lead magnet, created or refined for your audience</li>
         <li>Opt-in page with copy, design, and email platform connection</li>
@@ -536,17 +550,25 @@ footer a{color:var(--muted)}
         <li>7 days of Slack support</li>
       </ul>
 
-      <div class="beta-terms">
-        <strong>What we ask from you:</strong> Share basic funnel performance data after 90 days and leave an honest testimonial. Your experience helps us improve this new service when we open it up for others!
+      <hr class="p-divider"/>
+
+      <p class="p-ad">+ ad spend (~$150/mo at $5/day) goes directly to Meta — you control the budget.</p>
+
+      <hr class="p-divider"/>
+
+      <a class="btn btn-p btn-block" href="https://whitneybateson.thrivecart.com/done-for-you-funnel/">Claim a spot · <s>$1,997</s> $1,297</a>
+      <p class="p-split">Two payments of $649 also available</p>
+
+      <div class="p-call">
+        <p class="p-call-q">Not sure yet?</p>
+        <a class="p-call-link" href="https://whitneybateson.as.me/dfy-funnel-discovery">Book a 20-min call with Whitney →</a>
       </div>
 
-      <div class="cta-pair">
-        <a class="btn btn-p btn-block" href="https://whitneybateson.thrivecart.com/done-for-you-funnel/">Claim a spot · <s>$1,997</s> $1,297</a>
-        <p style="text-align:center;font-size:14px;color:var(--muted);margin-top:8px;font-style:italic;">Prefer to split it up? Two payments of $649 available.</p>
-        <p class="cta-or">or</p>
-        <a class="btn btn-s btn-block" href="https://whitneybateson.as.me/dfy-funnel-discovery">Book a 20-min call first</a>
+      <hr class="p-divider"/>
+
+      <div class="beta-terms" style="margin-bottom:0">
+        <strong>What we ask from you:</strong> Share basic funnel performance data after 90 days and leave an honest testimonial. Your experience helps us improve this new service when we open it up for others!
       </div>
-      <p class="cta-sub">Not sure if this is right for you? Hop on a quick call with Whitney.</p>
     </div>
   </div>
 </section>
