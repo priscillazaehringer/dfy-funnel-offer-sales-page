@@ -164,6 +164,17 @@ nav{position:sticky;top:0;z-index:100;background:var(--cream);border-bottom:1px 
 .cta-or{text-align:center;font-size:14px;color:var(--muted)}
 .cta-sub{text-align:center;font-size:14px;color:var(--muted);margin-top:10px;font-style:italic}
 
+/* testimonials */
+#testimonials{padding:80px 0;text-align:center}
+#testimonials .slabel{margin-bottom:14px}
+#testimonials h2{font-size:clamp(1.5rem,3.5vw,2.15rem);margin-bottom:40px}
+.t-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px;max-width:1040px;margin:0 auto;text-align:left}
+.t-card{background:var(--white);border:1px solid var(--border);border-radius:16px;padding:28px;box-shadow:var(--sh-sm);display:flex;flex-direction:column;gap:16px}
+.t-quote{font-size:17px;line-height:1.62;color:var(--text);margin:0;font-family:var(--head);font-style:italic}
+.t-quote::before{content:'\201C';color:var(--navy);font-size:2rem;line-height:0;vertical-align:-0.4em;margin-right:4px}
+.t-attrib{font-size:14px;color:var(--muted);margin:0}
+.t-name{font-weight:700;color:var(--navy)}
+
 /* faq */
 #faq{background:var(--cream)}
 #faq h2{font-size:clamp(1.45rem,3vw,1.95rem);margin-bottom:32px;max-width:460px}
@@ -339,6 +350,10 @@ footer a{color:var(--muted)}
       <p style="color:var(--muted);font-size:17px;max-width:580px;margin-bottom:36px;line-height:1.65">This is what's running for you 24/7 once we hand it off. Every piece below – the ad, the pages, the emails – gets built, written, and connected by our team. You don't touch a thing.</p>
     </div>
 
+    <div class="fi d1" style="margin-bottom:36px;text-align:center">
+      <img src="mockup.png" alt="Funnel mockup preview" style="max-width:100%;height:auto;width:800px;border-radius:14px;box-shadow:var(--sh-md);display:inline-block" />
+    </div>
+
     <div class="funnel-steps fi d1">
       <div class="funnel-step">
         <div class="funnel-icon">📣</div>
@@ -498,6 +513,37 @@ footer a{color:var(--muted)}
         <span class="o-emoji">😮‍💨</span>
         <span class="o-text">Stop performing on social – your funnel does the work whether you post or not</span>
       </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- TESTIMONIALS -->
+<section id="testimonials">
+  <div class="wrap">
+    <div class="fi">
+      <span class="slabel">What practitioners are saying</span>
+      <h2>Real reactions from the people we've built for.</h2>
+    </div>
+    <div class="t-grid fi d1">
+
+      <div class="t-card">
+        <p class="t-quote">OMG! This is so GOOD!!!! I could never have dreamed the lead magnet would be this amazing. And the emails are right on point.</p>
+        <p class="t-attrib"><span class="t-name">Heather Smith</span>, RD</p>
+      </div>
+
+      <div class="t-card">
+        <p class="t-quote">I think it looks really great and it is such a good flow to my offer. Thank you so much!! This is so great – literally saving me SOOO much time. It would have taken me – if I could find uninterrupted time – a couple full days of work to put this together, and I would have been second-guessing every sentence the entire time. So I really really appreciate it.</p>
+        <p class="t-attrib"><span class="t-name">Nila W.</span></p>
+      </div>
+
+      <!-- Add more testimonials here using the same pattern:
+      <div class="t-card">
+        <p class="t-quote">Quote goes here.</p>
+        <p class="t-attrib"><span class="t-name">First Last</span>, Title</p>
+      </div>
+      -->
+
     </div>
   </div>
 </section>
